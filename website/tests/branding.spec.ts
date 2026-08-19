@@ -108,6 +108,11 @@ test.describe('Studio Vybe branding', () => {
         rootFamily: getComputedStyle(document.getElementById('root')!)
           .fontFamily,
         monoFamily: getComputedStyle(probe).fontFamily,
+        headingWeight: getComputedStyle(document.querySelector('h2')!)
+          .fontWeight,
+        buttonWeight: getComputedStyle(
+          document.querySelector('button[type="submit"]')!,
+        ).fontWeight,
         headingTransform: getComputedStyle(document.querySelector('h2')!)
           .textTransform,
         textareaTransform: getComputedStyle(document.querySelector('textarea')!)
@@ -122,6 +127,8 @@ test.describe('Studio Vybe branding', () => {
     });
     expect(typography.rootFamily).toContain('Outfit');
     expect(typography.monoFamily).toContain('Outfit');
+    expect(typography.headingWeight).toBe('400');
+    expect(typography.buttonWeight).toBe('400');
     expect(typography.headingTransform).toBe('lowercase');
     expect(typography.textareaTransform).toBe('none');
     expect(typography.placeholderTransform).toBe('lowercase');
