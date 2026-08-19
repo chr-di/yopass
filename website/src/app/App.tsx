@@ -183,6 +183,17 @@ export default function App() {
                 </a>
               </span>
             </div>
+            <p className="text-xs text-base-content/50">
+              powered by{' '}
+              <a
+                href="https://yopass.se"
+                className="underline decoration-dotted underline-offset-4 transition-colors duration-200 hover:text-primary hover:decoration-solid"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                yopass
+              </a>
+            </p>
           </div>
         </div>
       </footer>
