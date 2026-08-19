@@ -1,4 +1,95 @@
 @import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+  --font-mono: 'Outfit', sans-serif;
+  --radius-sm: 2px;
+  --radius-md: 5px;
+  --radius-lg: 5px;
+  --radius-xl: 5px;
+  --radius-2xl: 5px;
+}
+
 @plugin "daisyui" {
   themes: all;
+}
+
+@plugin "daisyui/theme" {
+  name: 'studiovybe';
+  default: true;
+  prefersdark: true;
+  color-scheme: light;
+
+  --color-base-100: oklch(100% 0 0);
+  --color-base-200: oklch(95.8% 0.007 97.4);
+  --color-base-300: oklch(63.6% 0.008 67.7);
+  --color-base-content: oklch(31.4% 0.015 321.4);
+  --color-primary: oklch(63.6% 0.008 67.7);
+  --color-primary-content: oklch(100% 0 0);
+  --color-secondary: oklch(31.4% 0.015 321.4);
+  --color-secondary-content: oklch(100% 0 0);
+  --color-accent: oklch(63.6% 0.008 67.7);
+  --color-accent-content: oklch(100% 0 0);
+  --color-neutral: oklch(31.4% 0.015 321.4);
+  --color-neutral-content: oklch(100% 0 0);
+  --color-info: oklch(63.6% 0.008 67.7);
+  --color-info-content: oklch(100% 0 0);
+  --color-success: oklch(63.6% 0.008 67.7);
+  --color-success-content: oklch(100% 0 0);
+  --color-warning: oklch(63.6% 0.008 67.7);
+  --color-warning-content: oklch(100% 0 0);
+  --color-error: oklch(63.6% 0.008 67.7);
+  --color-error-content: oklch(100% 0 0);
+
+  --radius-selector: 2px;
+  --radius-field: 5px;
+  --radius-box: 5px;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/outfit-latin-wght-normal.woff2') format('woff2');
+}
+
+html,
+body {
+  background: oklch(100% 0 0);
+  color: oklch(31.4% 0.015 321.4);
+  font-family: 'Outfit', sans-serif;
+}
+
+#root,
+#root :where(*) {
+  font-family: 'Outfit', sans-serif;
+}
+
+#root {
+  text-transform: lowercase;
+}
+
+#root :where(input, textarea, code, pre, .font-mono, [data-preserve-case]) {
+  text-transform: none;
+}
+
+#root input::placeholder,
+#root textarea::placeholder {
+  text-transform: lowercase;
+}
+
+#root
+  :where(.shadow, .shadow-sm, .shadow-md, .shadow-lg, .hover\:shadow:hover) {
+  box-shadow: none;
+}
+
+:focus-visible {
+  outline-color: oklch(31.4% 0.015 321.4);
+  outline-offset: 2px;
 }

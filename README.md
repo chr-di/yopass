@@ -14,6 +14,14 @@ No accounts, no tracking, no plaintext storage. Stop sharing secrets in Slack, e
 
 **[Try the demo](https://yopass.se)** | It's recommended to self-host Yopass for sensitive use.
 
+## Modifications by Studio Vybe
+
+This repository is a branded derivative of
+[`jhaals/yopass`](https://github.com/jhaals/yopass), based on release `14.8.0`.
+The original Apache-2.0 license and notices remain in effect. The bundled
+Outfit webfont is distributed under the SIL Open Font License 1.1; its full
+notice is included at `website/public/fonts/OFL-Outfit.txt`.
+
 ### Features
 
 - End-to-end encryption using OpenPGP

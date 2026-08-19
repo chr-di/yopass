@@ -1,7 +1,7 @@
 export type LogicalTheme = 'light' | 'dark';
 
-export const DEFAULT_LIGHT_THEME = 'emerald';
-export const DEFAULT_DARK_THEME = 'dim';
+export const DEFAULT_LIGHT_THEME = 'studiovybe';
+export const DEFAULT_DARK_THEME = 'studiovybe';
 
 export const THEME_STORAGE_KEY = 'themeMode';
 

@@ -54,12 +54,12 @@ export default function Navbar() {
             >
               <img
                 src={LOGO_URL ?? '/yopass.svg'}
-                alt={APP_NAME ?? 'Yopass'}
-                className="h-8 w-8 mr-2 sm:mr-3 shrink-0"
+                alt={APP_NAME ?? 'studio vybe'}
+                className="h-10 w-auto max-w-[10rem] shrink-0"
               />
-              <span className="truncate">
-                {APP_NAME ?? t('header.appName')}
-              </span>
+              {APP_NAME && (
+                <span className="ml-2 truncate sm:ml-3">{APP_NAME}</span>
+              )}
             </a>
           </div>
           <div className="flex items-center gap-1 sm:gap-2 shrink-0">

@@ -7,6 +7,7 @@ import { saveNewReceipt } from '@shared/lib/receiptStore';
 import { useConfig } from '@shared/hooks/useConfig';
 import { useSecretForm } from '@shared/hooks/useSecretForm';
 import { SecretOptions } from '@shared/components/SecretOptions';
+import TrustExplainer from '@shared/components/TrustExplainer';
 import Result from '@features/display-secret/Result';
 
 export default function CreateSecret() {
@@ -102,7 +103,10 @@ export default function CreateSecret() {
 
   return (
     <>
-      <h2 className="text-3xl font-bold mb-4">{t('create.title')}</h2>
+      <h2 className="mb-3 text-2xl font-bold sm:text-3xl">
+        {t('create.title')}
+      </h2>
+      <TrustExplainer />
       <form onSubmit={handleSubmit(onSubmit)}>
         {errors.secret && (
           <div className="mb-4 text-red-600 text-sm font-medium">
@@ -116,7 +120,7 @@ export default function CreateSecret() {
           <textarea
             id="secret"
             {...register('secret')}
-            className="textarea textarea-bordered w-full min-h-[140px] text-base p-4 resize-y rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 bg-base-100"
+            className="textarea textarea-bordered w-full min-h-[112px] text-base p-4 resize-y rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 bg-base-100 sm:min-h-[140px]"
             placeholder={t('create.inputSecretPlaceholder')}
             rows={4}
           />

@@ -44,7 +44,7 @@ export default function App() {
   // Whether creation pages must show the login gate instead of their content.
   const needsLogin = REQUIRE_AUTH && !authLoading && !isAuthenticated;
   return (
-    <div className="min-h-screen bg-base-200 flex flex-col overflow-x-hidden">
+    <div className="min-h-screen bg-base-100 flex flex-col overflow-x-hidden">
       <button
         onClick={() => {
           const main = document.getElementById('main-content');
@@ -62,10 +62,10 @@ export default function App() {
         <main
           id="main-content"
           tabIndex={-1}
-          className="w-full max-w-3xl mx-auto mb-auto px-4 py-12 sm:py-16 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+          className="w-full max-w-3xl mx-auto mb-auto px-4 py-6 sm:py-16 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
         >
-          <div className="card bg-base-100 shadow-sm border border-base-300">
-            <div className="card-body p-6 sm:p-10">
+          <div className="card bg-base-200 border border-base-300">
+            <div className="card-body p-4 sm:p-10">
               {loginUnavailable && (
                 <div role="alert" className="alert alert-warning mb-6">
                   <svg
@@ -141,7 +141,7 @@ export default function App() {
         </main>
       </HashRouter>
       {/* Footer */}
-      <footer className="bg-base-100/50 border-t border-base-300">
+      <footer className="bg-base-200 border-t border-base-300">
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col items-center text-center space-y-4">
             <div className="flex flex-wrap items-center justify-center gap-2 text-sm">
@@ -172,14 +172,14 @@ export default function App() {
                 </>
               )}
               <span className="text-base-content/70">
-                &copy; 2014&ndash;{new Date().getFullYear()}{' '}
+                &copy; {new Date().getFullYear()}{' '}
                 <a
-                  href="https://yopass.se"
+                  href="https://studio-vybe.com"
                   className="text-primary hover:text-primary-focus font-medium transition-colors duration-200 underline decoration-dotted underline-offset-4 hover:decoration-solid"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Yopass
+                  studio vybe
                 </a>
               </span>
             </div>

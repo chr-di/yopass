@@ -11,6 +11,14 @@
     "inputRequireAuthLabel": "Authentifizierung zum Öffnen erforderlich",
     "inputReadReceiptLabel": "Lesebestätigung (verfolgen, wann das Geheimnis geöffnet wird)"
   },
+  "trust": {
+    "heading": "sicherer als e-mail",
+    "body": "ihre nachricht wird schon in ihrem browser verschlüsselt, bevor sie verschickt wird. der schlüssel zum entschlüsseln steckt danach nur im link, nicht auf unserem server. deshalb können selbst wir die nachricht nicht lesen.",
+    "bulletOneTime": "nur einmal lesbar",
+    "bulletExpires": "läuft automatisch ab",
+    "bulletNoAccount": "kein konto, keine app nötig",
+    "footnote": "wir betreiben den server selbst, bei einem deutschen anbieter."
+  },
   "upload": {
     "title": "Datei hochladen",
     "buttonUpload": "Hochladen",

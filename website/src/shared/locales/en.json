@@ -11,6 +11,14 @@
     "inputRequireAuthLabel": "Require authentication to open",
     "inputReadReceiptLabel": "Read receipt (track when the secret is opened)"
   },
+  "trust": {
+    "heading": "safer than email",
+    "body": "your message gets encrypted right here in your browser, before it's sent anywhere. the key to unlock it then lives only in the link, not on our server. that's why even we can't read it.",
+    "bulletOneTime": "readable only once",
+    "bulletExpires": "expires automatically",
+    "bulletNoAccount": "no account, no app needed",
+    "footnote": "we run the server ourselves, with a german provider."
+  },
   "upload": {
     "title": "Upload file",
     "buttonUpload": "Upload",

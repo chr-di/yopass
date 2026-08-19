@@ -10,6 +10,14 @@ export interface TranslationResources {
     inputOneTimeLabel: string;
     inputGenerateKeyLabel: string;
   };
+  trust: {
+    heading: string;
+    body: string;
+    bulletOneTime: string;
+    bulletExpires: string;
+    bulletNoAccount: string;
+    footnote: string;
+  };
   upload: {
     title: string;
     buttonUpload: string;
