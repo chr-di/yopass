@@ -17,7 +17,18 @@
     "bulletOneTime": "readable only once",
     "bulletExpires": "expires automatically",
     "bulletNoAccount": "no account, no app needed",
-    "footnote": "we run the server ourselves, with a german provider."
+    "footnote": "we run the server ourselves, with a german provider.",
+    "modalOpen": "why is this actually safe?",
+    "modalTitle": "why we can't read anything",
+    "modalClose": "got it",
+    "modalSendingTitle": "when you hit send",
+    "modalSendingBody": "your secret gets encrypted right in your browser, before anything is sent anywhere. all that reaches our server is scrambled, unreadable data, whether it's a text or a file.",
+    "modalLinkTitle": "the link is the key",
+    "modalLinkBody": "the key to unlock it lives inside the link itself, in the part after the # sign. your browser technically never sends that part to our server. that's why our server never gets to see your key, not at any point.",
+    "modalVisibilityTitle": "what we see and don't",
+    "modalVisibilityBody": "we never get to see the contents of your secret, not on the way in and not afterwards, because we never have the key. all we can see is that some secret exists and when it expires, nothing more. everything runs on a server we operate ourselves, with a provider in germany, not dropbox, not wetransfer, no us service.",
+    "modalTipsTitle": "tips for sending it",
+    "modalTipsBody": "sending the link by email or whatsapp like normal is fine, precisely because it destroys itself the moment it's opened. please don't post it in group chats or public channels, once it's out there, you can't control who opens it first. if the link claims it was already opened when nobody actually opened it, that's exactly the warning sign this method is designed to surface: get in touch with us and change the password right away."
   },
   "upload": {
     "title": "Upload file",

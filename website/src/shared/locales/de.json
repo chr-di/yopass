@@ -17,7 +17,18 @@
     "bulletOneTime": "nur einmal lesbar",
     "bulletExpires": "läuft automatisch ab",
     "bulletNoAccount": "kein konto, keine app nötig",
-    "footnote": "wir betreiben den server selbst, bei einem deutschen anbieter."
+    "footnote": "wir betreiben den server selbst, bei einem deutschen anbieter.",
+    "modalOpen": "warum ist das sicher?",
+    "modalTitle": "warum wir nichts lesen können",
+    "modalClose": "verstanden",
+    "modalSendingTitle": "beim absenden",
+    "modalSendingBody": "ihr geheimnis wird schon in ihrem browser verschlüsselt, also unlesbar gemacht, bevor es verschickt wird. bei uns auf dem server kommt nur noch datensalat an, egal ob text oder datei.",
+    "modalLinkTitle": "der link ist der schlüssel",
+    "modalLinkBody": "der schlüssel zum entschlüsseln steckt im link selbst, im teil hinter dem #-zeichen, der raute. diesen teil schickt ihr browser technisch nie an unseren server. deshalb bekommt unser server ihren schlüssel nie zu sehen, zu keinem zeitpunkt.",
+    "modalVisibilityTitle": "was wir sehen, was nicht",
+    "modalVisibilityBody": "den inhalt ihres geheimnisses bekommen wir zu keinem zeitpunkt zu sehen, weder beim empfang noch danach, denn den schlüssel dazu haben wir ja nie. sichtbar ist für uns höchstens, dass irgendein geheimnis existiert und wann es abläuft, mehr nicht. gehostet wird das ganze auf einem server, den wir selbst betreiben, bei einem anbieter in deutschland, nicht bei dropbox, wetransfer oder einem us-dienst.",
+    "modalTipsTitle": "tipps für den versand",
+    "modalTipsBody": "den link ganz normal per e-mail oder whatsapp zu schicken ist unbedenklich, gerade weil er sich nach dem ersten öffnen selbst zerstört. posten sie ihn trotzdem nicht in gruppenchats oder auf öffentlichen kanälen, dort kann niemand mehr kontrollieren, wer ihn zuerst öffnet. wenn der link beim öffnen behauptet, er sei schon geöffnet worden, obwohl das niemand war, ist das genau das warnsignal, das dieses verfahren zeigen soll: melden sie sich bitte bei uns und ändern sie umgehend das passwort."
   },
   "upload": {
     "title": "Datei hochladen",

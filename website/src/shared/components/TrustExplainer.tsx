@@ -1,7 +1,10 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import TrustModal from './TrustModal';
 
 export default function TrustExplainer() {
   const { t } = useTranslation();
+  const [open, setOpen] = useState(false);
   const bullets = [
     t('trust.bulletOneTime'),
     t('trust.bulletExpires'),
@@ -34,9 +37,20 @@ export default function TrustExplainer() {
           </li>
         ))}
       </ul>
-      <p className="mt-2 text-[11px] leading-tight text-base-content/70">
-        {t('trust.footnote')}
-      </p>
+      <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1">
+        <p className="text-[11px] leading-tight text-base-content/70">
+          {t('trust.footnote')}
+        </p>
+        <button
+          type="button"
+          className="text-[11px] leading-tight underline decoration-dotted underline-offset-4 transition-colors duration-200 hover:text-primary hover:decoration-solid"
+          onClick={() => setOpen(true)}
+          data-testid="trust-modal-open"
+        >
+          {t('trust.modalOpen')}
+        </button>
+      </div>
+      {open && <TrustModal onClose={() => setOpen(false)} />}
     </section>
   );
 }

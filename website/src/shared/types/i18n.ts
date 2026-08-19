@@ -17,6 +17,17 @@ export interface TranslationResources {
     bulletExpires: string;
     bulletNoAccount: string;
     footnote: string;
+    modalOpen: string;
+    modalTitle: string;
+    modalClose: string;
+    modalSendingTitle: string;
+    modalSendingBody: string;
+    modalLinkTitle: string;
+    modalLinkBody: string;
+    modalVisibilityTitle: string;
+    modalVisibilityBody: string;
+    modalTipsTitle: string;
+    modalTipsBody: string;
   };
   upload: {
     title: string;
