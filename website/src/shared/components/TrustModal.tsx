@@ -16,7 +16,9 @@ export default function TrustModal({ onClose }: TrustModalProps) {
   // Escape closes, and focus lands on the close button so keyboard users are
   // not stranded behind the overlay.
   useEffect(() => {
-    closeRef.current?.focus();
+    // preventScroll: the box overflows on short viewports, and a plain focus()
+    // scrolls the button into view, opening the overlay mid-text.
+    closeRef.current?.focus({ preventScroll: true });
     function onKey(e: KeyboardEvent) {
       if (e.key === 'Escape') onClose();
     }
