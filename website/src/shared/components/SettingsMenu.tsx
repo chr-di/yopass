@@ -1,24 +1,12 @@
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useConfig } from '@shared/hooks/useConfig';
-import { useTheme } from '@shared/theme/ThemeProvider';
 import { useDateFormat } from '@shared/hooks/useDateFormat';
 import { formatDateTime } from '@shared/lib/dateFormat';
 
 const languages = [
-  { code: 'en', name: 'English' },
-  { code: 'sv', name: 'Svenska' },
-  { code: 'no', name: 'Norsk' },
   { code: 'de', name: 'Deutsch' },
-  { code: 'cs', name: 'Czech' },
-  { code: 'pl', name: 'Polish' },
-  { code: 'ru', name: 'Русский' },
-  { code: 'by', name: 'Беларускі' },
-  { code: 'fr', name: 'Français' },
-  { code: 'nl', name: 'Nederlands' },
-  { code: 'es', name: 'Español' },
-  { code: 'it', name: 'Italiano' },
-  { code: 'ja', name: '日本語' },
+  { code: 'en', name: 'English' },
 ];
 
 // Cogwheel dropdown bundling the app-wide display settings: language,
@@ -26,7 +14,6 @@ const languages = [
 export default function SettingsMenu() {
   const { t, i18n } = useTranslation();
   const { NO_LANGUAGE_SWITCHER } = useConfig();
-  const { mode, setTheme } = useTheme();
   const [dateFormat, setDateFormat] = useDateFormat();
   const [isOpen, setIsOpen] = useState(false);
   // Captured when the menu opens so the date format preview reflects "now"
@@ -118,61 +105,6 @@ export default function SettingsMenu() {
               </select>
             </div>
           )}
-          <div className="flex items-center justify-between gap-3">
-            <span className="text-xs font-semibold uppercase tracking-wide text-base-content/60">
-              {t('settings.theme')}
-            </span>
-            {/* daisyUI toggle with icons inside: sun when light, moon when dark */}
-            <label
-              className="toggle text-base-content"
-              data-testid="theme-toggle"
-            >
-              <input
-                type="checkbox"
-                checked={mode === 'dark'}
-                onChange={e => setTheme(e.target.checked ? 'dark' : 'light')}
-                aria-label={t('settings.darkModeToggle')}
-              />
-              <svg
-                aria-label="sun"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <g
-                  strokeLinejoin="round"
-                  strokeLinecap="round"
-                  strokeWidth="2"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <circle cx="12" cy="12" r="4"></circle>
-                  <path d="M12 2v2"></path>
-                  <path d="M12 20v2"></path>
-                  <path d="m4.93 4.93 1.41 1.41"></path>
-                  <path d="m17.66 17.66 1.41 1.41"></path>
-                  <path d="M2 12h2"></path>
-                  <path d="M20 12h2"></path>
-                  <path d="m6.34 17.66-1.41 1.41"></path>
-                  <path d="m19.07 4.93-1.41 1.41"></path>
-                </g>
-              </svg>
-              <svg
-                aria-label="moon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-              >
-                <g
-                  strokeLinejoin="round"
-                  strokeLinecap="round"
-                  strokeWidth="2"
-                  fill="none"
-                  stroke="currentColor"
-                >
-                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-                </g>
-              </svg>
-            </label>
-          </div>
           <div>
             <div className="flex items-center justify-between gap-3">
               <span className="text-xs font-semibold uppercase tracking-wide text-base-content/60">

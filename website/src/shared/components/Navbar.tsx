@@ -55,7 +55,7 @@ export default function Navbar() {
               <img
                 src={LOGO_URL ?? '/yopass.svg'}
                 alt={APP_NAME ?? 'studio vybe'}
-                className="h-10 w-auto max-w-[10rem] shrink-0"
+                className="h-6 w-auto shrink-0 sm:h-8"
               />
               {APP_NAME && (
                 <span className="ml-2 truncate sm:ml-3">{APP_NAME}</span>
