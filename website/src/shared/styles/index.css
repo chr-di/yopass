@@ -24,10 +24,12 @@
   --color-base-200: oklch(96.2% 0.011 84.6);
   --color-base-300: oklch(92.5% 0.000 89.9);
   --color-base-content: oklch(23.0% 0.021 264.0);
-  /* gold CTA carries INK text, not white: white on #dab86e is 1.90:1 and
-     fails WCAG AA, ink is 8.89:1 */
+  /* Matches her live Divi button exactly (Chris, 2026-08-22): #DAB86E with a
+     white label. Note this is 1.90:1 and does not meet WCAG AA; brand
+     consistency was chosen over the contrast ratio. Switching the label back
+     to ink (8.89:1) is a one-line change to --color-primary-content. */
   --color-primary: oklch(79.6% 0.101 85.5);
-  --color-primary-content: oklch(23.0% 0.021 264.0);
+  --color-primary-content: oklch(100% 0 0);
   --color-secondary: oklch(23.0% 0.021 264.0);
   --color-secondary-content: oklch(100% 0 0);
   --color-accent: oklch(79.6% 0.101 85.5);
@@ -90,4 +92,13 @@ body {
 :focus-visible {
   outline-color: oklch(31.4% 0.015 321.4);
   outline-offset: 2px;
+}
+
+/* Primary CTA mirrors birgithotz.com: border-radius 100px, uppercase,
+   letter-spacing 1px, weight 600. */
+#root .btn-primary {
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
 }

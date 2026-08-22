@@ -143,7 +143,7 @@ export default function CreateSecret() {
 
         <div className="form-control mt-8">
           <button
-            className="btn btn-primary w-full h-12 text-base font-semibold rounded-lg transition-all duration-200"
+            className="btn btn-primary w-full h-12 text-base transition-all duration-200"
             type="submit"
           >
             <svg
