@@ -53,13 +53,13 @@ export default function Navbar() {
               href="/"
             >
               <img
-                src={LOGO_URL ?? '/yopass.svg'}
-                alt={APP_NAME ?? 'studio vybe'}
-                className="h-6 w-auto shrink-0 sm:h-8"
+                src={LOGO_URL ?? '/mark.png'}
+                alt={APP_NAME ?? 'Birgit Hotz'}
+                className="h-8 w-8 shrink-0 sm:h-9 sm:w-9"
               />
-              {APP_NAME && (
-                <span className="ml-2 truncate sm:ml-3">{APP_NAME}</span>
-              )}
+              <span className="ml-2 truncate sm:ml-3">
+                {APP_NAME ?? 'Birgit Hotz'}
+              </span>
             </a>
           </div>
           <div className="flex items-center gap-1 sm:gap-2 shrink-0">

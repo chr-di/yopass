@@ -704,8 +704,8 @@ const pgpMessageType = "PGP MESSAGE"
 // when no valid license overrides them. cmd/yopass-server uses them as the
 // defaults for the --theme-light and --theme-dark flags.
 const (
-	DefaultThemeLight = "studiovybe"
-	DefaultThemeDark  = "studiovybe"
+	DefaultThemeLight = "birgithotz"
+	DefaultThemeDark  = "birgithotz"
 )
 
 // The supported secret lifetimes live in pkg/yopass so the server and the

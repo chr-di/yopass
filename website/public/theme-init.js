@@ -1,7 +1,7 @@
 (function () {
   try {
-    var DEFAULT_LIGHT = 'studiovybe';
-    var DEFAULT_DARK = 'studiovybe';
+    var DEFAULT_LIGHT = 'birgithotz';
+    var DEFAULT_DARK = 'birgithotz';
     var storedMode = localStorage.getItem('themeMode'); // 'light' | 'dark'
     var prefersDark =
       window.matchMedia &&

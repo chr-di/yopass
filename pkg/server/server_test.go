@@ -2194,7 +2194,7 @@ func TestConfigHandler_LicensedBranches(t *testing.T) {
 			t.Fatalf("decode: %v", err)
 		}
 
-		if cfg["THEME_LIGHT"] != "studiovybe" || cfg["THEME_DARK"] != "studiovybe" {
+		if cfg["THEME_LIGHT"] != "birgithotz" || cfg["THEME_DARK"] != "birgithotz" {
 			t.Fatalf("expected Studio Vybe fallback themes, got %v / %v", cfg["THEME_LIGHT"], cfg["THEME_DARK"])
 		}
 		for _, key := range []string{"LOGO_URL", "APP_NAME", "THEME_CUSTOM_LIGHT", "THEME_CUSTOM_DARK", "MAX_FILE_SIZE"} {
@@ -2283,7 +2283,7 @@ func TestConfigHandler_LicensedBranches(t *testing.T) {
 			t.Fatalf("decode: %v", err)
 		}
 
-		if cfg["THEME_LIGHT"] != "studiovybe" || cfg["THEME_DARK"] != "studiovybe" {
+		if cfg["THEME_LIGHT"] != "birgithotz" || cfg["THEME_DARK"] != "birgithotz" {
 			t.Fatalf("expected Studio Vybe fallback themes, got %v / %v", cfg["THEME_LIGHT"], cfg["THEME_DARK"])
 		}
 		for _, key := range []string{"LOGO_URL", "APP_NAME"} {

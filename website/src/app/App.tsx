@@ -174,12 +174,12 @@ export default function App() {
               <span className="text-base-content/70">
                 &copy; {new Date().getFullYear()}{' '}
                 <a
-                  href="https://studio-vybe.com"
+                  href="https://birgithotz.com"
                   className="text-primary hover:text-primary-focus font-medium transition-colors duration-200 underline decoration-dotted underline-offset-4 hover:decoration-solid"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  studio vybe
+                  Birgit Hotz
                 </a>
               </span>
             </div>
